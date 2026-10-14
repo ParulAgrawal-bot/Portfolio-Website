@@ -1,0 +1,2 @@
+import Link from 'next/link'; import {Window} from '@/components/site';
+export default function NotFound(){return <div style={{textAlign:'center',padding:'9vh 0'}}><p className="kicker">SIGNAL LOST</p><div className="error-code">404</div><Window title="GAME OVER // CONTINUE?" className="world"><h2>LEVEL NOT FOUND</h2><p className="muted">This path is outside the map. Pick another level and continue your quest.</p><Link className="btn green" href="/">CONTINUE</Link></Window></div>}

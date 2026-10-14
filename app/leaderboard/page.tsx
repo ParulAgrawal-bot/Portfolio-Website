@@ -1,0 +1,4 @@
+import {Heading,Window} from '@/components/site';
+export const metadata={title:'Level 05: Competitive Programming',description:'Competitive programming high scores and platform ratings for Parul Agrawal.'};
+export default function Leaderboard(){
+    return <><Heading kicker="LEVEL 05 // ARCADE RANKINGS" title="Leaderboard" desc="Personal bests from the problem-solving arena."/><Window title="HIGH SCORES // PLAYER 01"><table className="score-table"><thead><tr><th>ARENA</th><th>PERSONAL BEST</th><th>STATUS</th></tr></thead><tbody><tr><td>LeetCode</td><td className="score">1559</td><td>MAX RATING</td></tr><tr><td>CodeChef</td><td className="score">1332</td><td>MAX RATING</td></tr><tr><td>Codeforces</td><td className="score">950</td><td>MAX RATING</td></tr></tbody></table><p className="muted">Keep practicing. The next high score is always one solve away.</p></Window></>}

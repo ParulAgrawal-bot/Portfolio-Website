@@ -1,0 +1,2 @@
+import type {MetadataRoute} from 'next';
+export default function sitemap():MetadataRoute.Sitemap { const base='https://parulagrawal.dev';return ['','/about','/projects','/projects/secure-voting-system','/projects/bankers-algorithm-simulator','/open-source','/skills','/leaderboard','/contact'].map(path=>({url:`${base}${path}`,lastModified:new Date('2026-01-01'),changeFrequency:path===''?'monthly':'yearly',priority:path===''?1:.7})) }
